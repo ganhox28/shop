@@ -44,6 +44,12 @@ html {
 #header {
 	height: 120px;
 	background: linear-gradient(-180deg,#f53d2d,#f63);
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(0);
+    z-index: 100;
 }
 
 .header__topbar {
