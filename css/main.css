@@ -1,0 +1,128 @@
+:root {
+	--white-color: #fff;
+	--black-color: #000;
+	--text-color: #333;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+	font-size: 16px;
+	line-height: 1rem;
+	box-sizing: border-box;
+}
+
+.grid {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.grid__full-width {
+	width: 100px;
+}
+
+.grid__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#header {
+	height: 120px;
+	background: linear-gradient(-180deg,#f53d2d,#f63);
+}
+
+.header__topbar {
+	height: 2.125rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.8125rem;
+}
+
+
+.header__topbar .header__topbar-list {
+	list-style-type: none;
+	display: flex;
+}
+
+.header__topbar-items {
+	margin: 0 8px;
+}
+
+.header__topbar-items,
+.topbar-items-link {
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+.point-hover:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.topbar-user {
+	font-weight: bold;
+}
+
+.separate-left {
+	padding-right: 8px;
+	border-right: 1px solid #fb9086;
+	margin-right: -1px;
+}
+
+.topbar__icon {
+	color:  var(--white-color);
+	text-decoration: none;
+	margin: 0 4px;
+}
+
+.topbar__qrcode {
+	display: none;
+	position: absolute;
+	width: 11.25rem;
+	animation: fadeIn ease 0.2s;
+}
+
+.header__topbar-items:hover .topbar__qrcode {
+	display: block;
+}
+
+.topbar__qrcode-box {
+	padding: 2px;
+	border-radius: 2px;
+	background: #fff;
+	margin-top: 0.625rem;
+}
+
+.topbar__qr-img img {
+	width: 100%;
+}
+
+.topbar__applink-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.7rem 0.3125rem;
+    flex-wrap: wrap;
+}
+
+.topbar__applink-img img {
+	width: 4.375rem;
+	margin-top: 0.3125rem;
+}
+
