@@ -155,6 +155,7 @@ html {
 	transform-origin: calc(100% - 30px) top;
 	animation: notif-popup linear 0.2s;
 	will-change: opacity, transform;
+	z-index: 1;
 }
 
  @keyframes notif-popup{
@@ -279,6 +280,154 @@ html {
 	height: 40px;
 	background-color: #fff;
 	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 0.125rem 0.25rem rgb(0 0 0 / 50%);
+	padding: 5px 0px;
+}
+
+.header__sreach-bar-box {
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+
+.header__sreach-bar {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	padding: 0 8px;
+	border-radius: 2px;
+}
+
+.header__search-history {
+	display: none;
+	position: absolute;
+	width: calc(100% - 32px);
+	top: 100%;
+	left: 0;
+	padding-top: 0.625rem;
+}
+
+.header__sreach-bar:focus ~ .header__search-history {
+	display: block;
+}
+
+.header__search-history-box {
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 0.125rem 0.25rem rgb(0 0 0 / 50%);
+}
+
+.sreach-history-head {
+	color: #000;
+	opacity: 0.26;
+	font-weight: 400;
+	padding: 10px 0.625rem;
+	font-size: 14px;
+}
+
+.sreach-history-list {
+	list-style: none;
+}
+
+.sreach-history-item {
+	
+}
+
+.sreach-history-item:hover {
+	background-color: #f8f8f8;
+}
+
+.sreach-history-link {
+	display: block;
+	padding: 0.625rem;
+    font-size: .875rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.sreach-select {
+	border-left: 1px solid #e8e8e8;
+	padding-left: 16px;
+	padding-right: 0.625rem;
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	cursor: pointer;
+}
+
+.sreach-select-label{
+	font-size: 14px;
+}
+
+.sreach-select-icon {
+	font-size: 10px;
+	opacity: 0.6;
+	margin-left: 0.6rem;
+}
+
+.sreach-select-option {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 150px;
+	padding-top: 0.625rem;
+}
+
+.sreach-select:hover .sreach-select-option {
+	display: block;
+}
+
+.sreach-option {
+	list-style-type: none;
+	/*margin-top: 10px;*/
+	background-color: var(--white-color);
+	border-radius: 2px;
+	font-size: 14px;
+	box-shadow: 0px 0.125rem 0.25rem rgb(0 0 0 / 50%);
+}
+
+.sreach-option-item {
+	padding: 15px 10px;
+	display: flex;
+	align-items: center;
+}
+
+.sreach-option-item:hover {
+	background-color: #f8f8f8;
+}
+
+.sreach-option-item span {
+	flex: 1;
+}
+
+.sreach-option-item i {
+	display: none;
+}
+
+.item-selected i {
+	display: block;
+}
+
+.btn-sreach {
+	outline: 0;
+    background: #fb5533;
+    border: none;
+    padding: 9px 23px;
+    border-radius: 2px;
+    color: var(--white-color);
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.btn-sreach:hover {
+	opacity: 0.8;
 }
 
 .header__btn-cart {
