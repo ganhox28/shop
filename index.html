@@ -173,23 +173,23 @@
 						</a>
 					</div>
 
-					<div class="header__sreach">
-						<div class="header__sreach-bar-box">
-							<input class="header__sreach-bar" type="sreach" name="" placeholder="Nhập để tìm kiếm">
-							<div class="header__search-history">
+					<div class="header__search">
+						<div class="header__search-bar-box">
+							<input id="inp-search" class="header__search-bar" type="search" name="" placeholder="Nhập để tìm kiếm">
+							<div id="header__id-search-history" class="header__search-history">
 								<div class="header__search-history-box">
-									<h3 class="sreach-history-head">
+									<h3 class="search-history-head">
 										Lịch sử Tìm kiếm
 									</h3>
-									<ul class="sreach-history-list">
-										<li class="sreach-history-item">
-											<a href="#" class="sreach-history-link">
+									<ul class="search-history-list">
+										<li class="search-history-item">
+											<a href="#" class="search-history-link">
 												áo nam
 											</a>
 										</li>
 
-										<li class="sreach-history-item">
-											<a href="#" class="sreach-history-link">
+										<li class="search-history-item">
+											<a href="#" class="search-history-link">
 												trang sức
 											</a>
 										</li>
@@ -197,38 +197,48 @@
 								</div>								
 							</div>
 						</div>
-						<div class="sreach-select">
-							<span class="sreach-select-label">
+						<div class="search-select">
+							<span class="search-select-label">
 								Trong shop
 							</span>
-							<i class="sreach-select-icon fa fa-angle-down" aria-hidden="true"></i>
-							<div class="sreach-select-option">
-								<ul class="sreach-option">
-									<li class="sreach-option-item item-selected">
+							<i class="search-select-icon fa fa-angle-down" aria-hidden="true"></i>
+							<div class="search-select-option">
+								<ul class="search-option">
+									<li class="search-option-item item-selected">
 										<span>Trong shop</span>
 										<i class="fa-solid fa-check"></i>
 									</li>
-									<li class="sreach-option-item">
+									<li class="search-option-item">
 										<span>Ngoài shop</span>
 										<i class="fa-solid fa-check"></i>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<button class="btn-sreach" type="button">
+						<button class="btn-search" type="button">
 							<i class="fa-solid fa-magnifying-glass"></i>
 						</button>
 					</div>
 
-					<div class="header__btn-cart">
-						<a class="btn-cart" href="#">
-							<svg viewBox="0 0 26.6 25.6" class="shopee-svg-icon navbar__link-icon icon-shopping-cart-2">
-								<polyline fill="none" points="2 1.7 5.5 1.7 9.6 18.3 21.2 18.3 24.6 6.1 7 6.1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5">
-								</polyline>
-								<circle cx="10.7" cy="23" r="2.2" stroke="none"></circle>
-								<circle cx="19.7" cy="23" r="2.2" stroke="none"></circle>
-							</svg>
-						</a>
+					<div class="header__cart">
+						<div class="cart">
+							<a class="btn-cart" href="#">
+								<svg viewBox="0 0 26.6 25.6" class="shopee-svg-icon navbar__link-icon icon-shopping-cart-2">
+									<polyline fill="none" points="2 1.7 5.5 1.7 9.6 18.3 21.2 18.3 24.6 6.1 7 6.1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5">
+									</polyline>
+									<circle cx="10.7" cy="23" r="2.2" stroke="none"></circle>
+									<circle cx="19.7" cy="23" r="2.2" stroke="none"></circle>
+								</svg>
+							</a>
+							<div class="header__cart-box">
+								<div class="cart-box cart-noproduct">
+									<img src="img/nocart.png">
+									<p class="cart-nopro-nof">
+										Chưa có sản phẩm
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -239,5 +249,6 @@
 
 		<div id="footer"></div>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
