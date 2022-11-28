@@ -675,7 +675,7 @@ html {
 
 .cart-box {
 	width: 400px;
-/*	height: 260px;*/
+	height: 50vh;
 	background-color: var(--white-color);
 	border-radius: 2px;
 	transform-origin: calc(100% - 4px) top;
