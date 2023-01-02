@@ -562,6 +562,7 @@ a {
 	position: relative;
 	height: 100%;
 	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .search-select-label{
