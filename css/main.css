@@ -768,7 +768,7 @@ a {
 	justify-content: space-between;
 	background-color: var(--white-color);
 	border-radius: 2px;
-	min-width: 200px;
+	min-width: 176px;
 	padding: 0 16px;
 }
 
@@ -1062,10 +1062,4 @@ a {
 	justify-content: center;
 	margin: 32px 0 0;
 	padding: 16px 0;
-}
-
-@media (max-width: 1080px) {
-	.row-col-5 {
-		width: 50%;
-	}
 }
