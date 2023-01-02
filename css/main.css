@@ -935,7 +935,7 @@ a {
 
 .saled-count {
 	font-size: 13px;
-	margin-left: 12px;
+	margin-left: 16px;
 }
 
 .place-shop {
@@ -1062,4 +1062,16 @@ a {
 	justify-content: center;
 	margin: 32px 0 0;
 	padding: 16px 0;
+}
+
+@media (min-width: 300px) and (max-width: 739px) {
+	
+}
+
+@media (min-width: 740px) and (max-width: 1123px) {
+	
+}
+
+@media (min-width: 1124px) {
+	
 }

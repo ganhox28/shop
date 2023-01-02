@@ -126,7 +126,7 @@
 	}
 
 	.m-0 {
-		display: none;
+		display: none !important;
 	}
 
 	.m-1 {
@@ -225,7 +225,7 @@
 	}
 
 	.t-0 {
-		display: none;
+		display: none !important;
 	}
 
 	.t-1 {
