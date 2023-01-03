@@ -30,6 +30,10 @@
 	display: none;
 }
 
+.col-show {
+	display: unset;
+}
+
 .col-1 {
 	flex: 0 0 8.33333333%;
   	max-width: 8.33333333%;
@@ -129,6 +133,10 @@
 		display: none !important;
 	}
 
+	.m-show {
+		display: unset;
+	}
+
 	.m-1 {
 		flex: 0 0 8.33333333%;
 	  	max-width: 8.33333333%;
@@ -226,6 +234,10 @@
 
 	.t-0 {
 		display: none !important;
+	}
+
+	.t-show {
+		display:  unset;
 	}
 
 	.t-1 {
