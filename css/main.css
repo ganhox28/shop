@@ -634,6 +634,7 @@ a {
 
 .cart-box-list {
 	list-style-type: none;
+	overflow-y: auto;
 }
 
 .cart-box-item {
