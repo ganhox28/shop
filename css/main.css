@@ -587,7 +587,7 @@ a {
 
 .cart-box {
 	width: 400px;
-	height: 50vh;
+	max-height: 50vh;
 	background-color: var(--white-color);
 	border-radius: 2px;
 	transform-origin: calc(100% - 4px) top;
@@ -1071,11 +1071,11 @@ a {
 }
 
 @media (min-width: 300px) and (max-width: 739px) {
-
+	
 }
 
 @media (min-width: 740px) and (max-width: 1123px) {
-
+	
 }
 
 @media (min-width: 1124px) {
