@@ -122,6 +122,10 @@
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 300px) and (max-width: 739px) {
+	.grid {
+		width: 96%;
+	}
+
 	.row {
 		margin: 0 -4px;
 	}
