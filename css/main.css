@@ -589,7 +589,7 @@ a {
 
 .cart-box {
 	width: 400px;
-	max-height: 50vh;
+	max-height: 60vh;
 	background-color: var(--white-color);
 	border-radius: 2px;
 	transform-origin: calc(100% - 4px) top;
